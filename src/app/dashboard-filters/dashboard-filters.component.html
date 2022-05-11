@@ -1,0 +1,27 @@
+<div class="content">
+	<h2>Dashboard filters</h2>
+	
+	<div class="card-container">
+		<label>Organisation</label>
+		<select placeholder="Organisation" [(ngModel)]="selectedOrganisation" (change)="changeOrganisation($event)">
+			<option>--Choose Organisation--</option>
+			<option *ngFor="let organisation of organisations">{{organisation.name}}</option>
+		</select>
+	</div>
+
+	<div class="card-container">
+		<label>Department</label>
+		<select placeholder="Department" (change)="changeDepartment($event)">
+			<option>--Choose Department--</option>
+			<option *ngFor="let department of department">{{department.name}}</option>
+		</select>
+	</div>
+	
+	<div class="card-container">
+		<label>City</label>
+		<select placeholder="City">
+			<option>--Choose City--</option>
+			<option *ngFor="let designation of designations">{{designation}}</option>
+		</select>
+	</div>
+</div>
