@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { NgChartsModule } from 'ng2-charts';
 import { DashboardFiltersComponent } from './dashboard-filters/dashboard-filters.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -15,8 +18,10 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     NgChartsModule,
-    ReactiveFormsModule, FormsModule
-   
+    ReactiveFormsModule, FormsModule,
+    MatPaginatorModule,
+    MatSelectModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
